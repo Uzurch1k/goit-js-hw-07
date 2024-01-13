@@ -1,5 +1,9 @@
 /*----------------------------Null----------------------------*/
 * {
+  box-sizing: border-box;
+}
+
+* {
   padding: 0;
   margin: 0;
   border: 0;
@@ -66,18 +70,23 @@ html {
 }
 
 body {
-  margin: 16px;
+  margin: 20px;
   font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #ffffff;
   color: #212121;
   line-height: 1.5;
+  font-size: 20px;
+}
+
+ul > li > a {
+  font-weight: 600;
+  color: #2e2f42;
 }
 
 /*----------------------------Task 1----------------------------*/
 p > a {
-  font-size: 20px;
   font-weight: 600;
   color: #2e2f42;
 }
