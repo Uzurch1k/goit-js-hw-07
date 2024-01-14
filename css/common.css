@@ -274,9 +274,76 @@ h1 {
   letter-spacing: 0.64px;
   border-radius: 8px;
   background-color: #4e75ff;
+  border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .widget > button:hover {
   background-color: #6c8cff;
+}
+
+/*----------------------------Task 6----------------------------*/
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 486px;
+  height: 104px;
+  border-radius: 8px;
+  background: #f6f6fe;
+  margin-bottom: 16px;
+}
+
+#controls > input {
+  border-radius: 8px;
+  border: 1px solid #808080;
+  width: 150px;
+  height: 40px;
+  background-color: transparent;
+  outline: transparent;
+  text-align: center;
+  padding-left: 10px;
+}
+
+#controls > input:hover {
+  border: 1px solid #000;
+}
+
+button[data-create],
+[data-destroy] {
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button[data-create] {
+  background-color: #4e75ff;
+}
+button[data-create]:hover {
+  background-color: #6c8cff;
+}
+
+button[data-destroy] {
+  background-color: #ff4e4e;
+}
+button[data-destroy]:hover {
+  background-color: #e47171;
+}
+
+#boxes {
+  width: 486px;
+  border-radius: 8px;
+  background: #f6f6fe;
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
