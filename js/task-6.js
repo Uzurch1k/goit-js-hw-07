@@ -19,6 +19,7 @@ function onBtnCreate() {
 
   if (1 <= currentValue && 100 >= currentValue) {
     boxesElem.innerHTML = '';
+    boxesElem.style.padding = '32px';
     createBoxes(currentValue);
     numberInput.value = 0;
   } else {
@@ -49,5 +50,6 @@ function onBtnDestroy() {
 
 function destroyBoxes() {
   boxesElem.innerHTML = '';
+  boxesElem.style.padding = '0';
   numberInput.value = 0;
 }

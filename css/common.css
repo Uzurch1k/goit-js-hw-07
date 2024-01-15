@@ -341,7 +341,6 @@ button[data-destroy]:hover {
 #boxes {
   border-radius: 8px;
   background: #f6f6fe;
-  padding: 32px;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
