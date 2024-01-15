@@ -14,8 +14,8 @@ function onFormSubmit(e) {
   }
 
   const objData = {
-    Email: userEmail,
-    Password: userPassword,
+    email: userEmail,
+    password: userPassword,
   };
 
   console.log(objData);

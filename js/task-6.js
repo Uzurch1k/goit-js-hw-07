@@ -23,23 +23,24 @@ function onBtnCreate() {
     createBoxes(currentValue);
     numberInput.value = 0;
   } else {
-    alert('The number must be between 1 and 100! Please try again :)');
+    // alert('The number must be between 1 and 100! Please try again :)');
     numberInput.value = 0;
+    return;
   }
 }
 
 function createBoxes(amount) {
-  let box = [];
+  let boxesHtml = [];
 
   for (let i = 0; i < amount; i++) {
-    box.push(
+    boxesHtml.push(
       `<div style="width: ${30 + 10 * i}px; height: ${
         30 + 10 * i
       }px; background-color: ${getRandomHexColor()}"></div>`
     );
   }
 
-  boxesElem.insertAdjacentHTML('beforeend', box.join(''));
+  boxesElem.innerHTML = boxesHtml.join('');
 }
 
 destroyBtn.addEventListener('click', onBtnDestroy);
@@ -51,5 +52,4 @@ function onBtnDestroy() {
 function destroyBoxes() {
   boxesElem.innerHTML = '';
   boxesElem.style.padding = '0';
-  numberInput.value = 0;
 }
