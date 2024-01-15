@@ -18,7 +18,9 @@ function onBtnCreate() {
   const currentValue = Number(numberInput.value);
 
   if (1 <= currentValue && 100 >= currentValue) {
+    boxesElem.innerHTML = '';
     createBoxes(currentValue);
+    numberInput.value = 0;
   } else {
     alert('The number must be between 1 and 100! Please try again :)');
     numberInput.value = 0;
@@ -36,7 +38,7 @@ function createBoxes(amount) {
     );
   }
 
-  boxesElem.insertAdjacentHTML('afterbegin', box.join(''));
+  boxesElem.insertAdjacentHTML('beforeend', box.join(''));
 }
 
 destroyBtn.addEventListener('click', onBtnDestroy);
