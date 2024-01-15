@@ -1,9 +1,7 @@
-// ===========================================================
 const categories = document.querySelector('#categories');
 
 console.log('Number of categories:', categories.children.length);
 
-// ===========================================================
 const categoriesItem = document.querySelectorAll('.item');
 
 categoriesItem.forEach(item => {
